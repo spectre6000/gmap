@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="gmap.css">
+  </head>
+  <body>
+    <div id="map"></div>
+    <form id='form'>
+        <fieldset>
+          <legend>GMAP</legend>
+          <div id="search_form">
+            <label for="latitude" id="latitude_label">Latitude (39.910)</label>
+            <input type="text" name="latitude" id="latitude_field">
+            <label for="longitude" id="longitude_label">Longitude (-105.085)</label>
+            <input type="text" name="longitude" id="longitude_field">
+            <label for="message" id="message_label">Message</label>
+            <input type="text" name="message" id="message_field">
+            <input type="submit" name="submit" id="go" value="Go!">
+          </div>
+        </fieldset>
+      </form>
+  <!--scripts-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANy00GSM89cmNiamjfklso3oMwZEcYERo&callback=initMap">
+    </script>
+    <script type="text/javascript" src="gmap.js"></script>
+  </body>
+</html>
